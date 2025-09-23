@@ -9,7 +9,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ $(id -u)-eq 0 ];then
+if [ $(id -u) -eq 0 ];then
    echo "User have access to install "
 else
    echo "user don't have root access"
