@@ -1,7 +1,7 @@
 #!/bin/bash
 
-user_id=$(id -u)
-if[ $user_id -ne o ]; then
+userid=$(id -u)
+if[ $userid -ne 0 ]; then
     echo "user don't have root access to install"
 fi
 dnf install mysql -y
