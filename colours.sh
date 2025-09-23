@@ -17,7 +17,7 @@ else
 fi
 
 # Check for mysql is allready installed or not
-dnf list mysql installed mysql
+dnf list  installed mysql
 if [ $? -eq 0 ];then
     echo -e "Installing Mysql....$Y is Skipped"
 else
@@ -26,7 +26,7 @@ else
 fi
 
 # Check for nginx is allready installed or not
-dnf list install nginx
+dnf list installed nginx
 if [ $? -eq 0 ];then
      echo -e "Installing nginx....$Y is Skipped"
 else
@@ -35,7 +35,7 @@ else
 fi
 
 # Check for python is allready installed or not
-dnf list install python3
+dnf list installed python3
 if [ $? -eq 0 ];then
         echo -e "Installing python....$Y is Skipped"
 else
