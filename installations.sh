@@ -1,6 +1,6 @@
 #!/bin/bash
 
-user_id = $(id -u)
+user_id=$(id -u)
 if[ $user_id -ne o ]; then
     echo "user don't have root access to install"
 fi
